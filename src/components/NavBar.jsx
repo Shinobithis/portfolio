@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 
-<<<<<<< HEAD
 function NavBar({ onToggle, currentTheme }) { // Accepts props
-=======
-function NavBar() {
->>>>>>> 5e65a2ccef6a3d0e70384aa9c188255dd3182d0a
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -67,11 +63,7 @@ function NavBar() {
 
         {/* Mobile menu - appears when isMenuOpen is true */}
         {isMenuOpen && (
-<<<<<<< HEAD
           <div className="md:hidden absolute top-0 left-0 w-full h-screen bg-nav-bg flex flex-col items-center justify-center space-y-6 z-60 animate-slide-down">
-=======
-          <div className="md:hidden absolute top-0 left-0 w-full h-screen bg-nav-bg flex flex-col items-center justify-center space-y-6 z-10 animate-slide-down">
->>>>>>> 5e65a2ccef6a3d0e70384aa9c188255dd3182d0a
             <a 
               href="#" 
               className="text-2xl text-nav-text hover:text-nav-text-hover transition-colors duration-300"
@@ -102,7 +94,6 @@ function NavBar() {
             >
               Contact Me
             </button>
-<<<<<<< HEAD
             
             {/* Theme Switch inside mobile menu */}
             <div className="mt-8">
@@ -118,8 +109,6 @@ function NavBar() {
                  )}
               </button>
             </div>
-=======
->>>>>>> 5e65a2ccef6a3d0e70384aa9c188255dd3182d0a
           </div>
         )}
     </nav>
